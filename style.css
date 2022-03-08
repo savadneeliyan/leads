@@ -36,7 +36,7 @@ p{
 }
 
 #main_header {
-    background-color: orange;
+   
     border:1px solid #fff;
 }
 #main_header div.content{
@@ -58,20 +58,26 @@ p{
 #main_header div.content div.middle ul li:nth-child(2){
     
 }
+section.banner {
+    
+    background-color: rgba(255,255,255,0.9);
+    background-position: center right;
+    background-size: cover;
+    height: 400px;
+}
 section.banner div.wrapper {
+    background-image: url(images/office.jpg);
     text-align: left;
     display: flex;
     margin-right: 0;
     align-items: center;
     justify-content: space-between;
-    background-image: url(https://www.taxinnovations.com/wp-content/uploads/10101.jpg);
-    background-position: center right;
+  
 }
 section.banner div.left{
-    width: 50%;
-    height: 400px;
+    width: 400px;
     padding-top: 50px;
-    background-color: #fff;
+   
 }
 section.banner div.left div.content{
     padding: 30px 0;
@@ -82,11 +88,7 @@ section.banner div.left div.content{
 section.banner div.left div.content h3{
     text-align: center;
 }
-section.banner div.right{
-    width: 50%;
-    height: 400px;
-    
-}
+
 section.banner div.right img{
     display: block;
     width: 100%;
@@ -232,3 +234,4 @@ section.bottom ul li{
     border-right: 1px solid rgb(250, 247, 247);
     border-left: 1px solid rgb(253, 252, 252);
 }
+
