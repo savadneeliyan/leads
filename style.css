@@ -14,9 +14,6 @@
 ol, ul {
 	list-style: none;
 }
-del {
-	text-decoration: line-through;
-}
 body {
 	font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
 	font-size: 17px;
@@ -25,26 +22,8 @@ body {
 	min-width: 320px;
 	font-weight: 400;
 }
-input,textarea,select{
-	font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
-	font-weight: 400;
-}
-
 a{
 	color: #1C2C40;
-}
-a:hover,.submit:hover{
-	filter: alpha(opacity = 85);
-	-moz-opacity: 0.85;
-	-khtml-opacity: 0.85;
-	opacity: 0.85;
-}
-.thumb{
-	display: block;
-}
-.thumb img{
-	display: block;
-	width:100%;
 }
 p{
 	line-height:1.6em;
@@ -52,73 +31,13 @@ p{
 	font-family: "GT-Eesti", Arial;
 	font-weight: 400;
 }
-.hidden{
-	display:none;
-}
-br.clear {
-	clear: both;
-	line-height: 0;
-}
-.wrapper {
-	width: 90%;
-	margin: 0 auto;
-	
-}
 
-@font-face {
-    font-family: 'GT-Eesti';
-    src: url("../fonts/GT-Eesti-Pro-Text-Light.woff2") format("woff2");
-    src: url("../fonts/GT-Eesti-Pro-Text-Light.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Light.ttf") format("truetype");
-    font-weight: 400;
-    font-style: normal
-}
-
-@font-face {
-    font-family: 'GT-Eesti';
-    src: url("../fonts/GT-Eesti-Pro-Text-Regular.woff2") format("woff2");
-    src: url("../fonts/GT-Eesti-Pro-Text-Regular.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Regular.ttf") format("truetype");
-    font-weight: 500;
-    font-style: normal
-}
-
-@font-face {
-    font-family: 'GT-Eesti';
-    src: url("../fonts/GT-Eesti-Pro-Text-Medium.woff2") format("woff2");
-    src: url("../fonts/GT-Eesti-Pro-Text-Medium.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Medium.ttf") format("truetype");
-    font-weight: 600;
-    font-style: normal
-}
-
-@font-face {
-    font-family: 'GT-Eesti';
-    src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff2") format("woff2");
-    src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Bold.ttf") format("truetype");
-    font-weight: 700;
-    font-style: normal
-}
-::placeholder {
-  color: #C0CCDA;
-  opacity: 1;
-}
-
-:-ms-input-placeholder {
-  color: #C0CCDA;
-}
-
-::-ms-input-placeholder {
-  color: #C0CCDA;
-}
-
-:root {
-  --main-bg-color: #23D3D3;
-  --main-heading-color:#1C2C40;
-}
 #main_header {
-    height: 150px;
     background-color: orange;
+    border:1px solid #fff;
 }
 #main_header div.content{
-    padding-top: 80px;
+   
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -127,6 +46,11 @@ br.clear {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+#main_header div.content div.middle ul li{
+    padding: 20px;
+    border-right: 1px solid rgb(250, 247, 247);
+    border-left: 1px solid rgb(253, 252, 252);
 }
 #main_header div.content div.middle ul li:nth-child(2){
     margin: 0 20px;
@@ -153,4 +77,59 @@ section.banner div.right{
 section.banner div.right img{
     display: block;
     width: 100%;
+}
+section.services{
+    background-color: darkgray;
+    padding-bottom: 100px;
+    
+}
+section.services div.head{
+   position: relative;
+   text-transform: uppercase;
+   top: -50px;    
+   width: 200px;
+   margin: auto;
+}
+section.services div.head h2{
+    padding: 20px;
+    background-color: darkgray;
+    margin: auto;
+}
+section.services h2{
+    text-align: center;
+    padding-bottom: 30px;
+}
+section.services div.content{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;   
+    text-transform: capitalize;
+}
+section.services div.content div.card{
+    width: 25%;
+    background-color: orange;
+}
+section.services div.content div.card img{
+    width: 100%;
+}
+section.services div.content div.card div.down{
+    padding: 20px;
+    padding-bottom: 10px;
+}
+section.services div.content div.card div.down h2{
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.438em;
+    margin-bottom: 20px;
+}
+section.services div.content div.card div.down p{
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+section.services div.content div.card div.down p.down{
+    color: black;
+    margin-bottom: 0;
 }
