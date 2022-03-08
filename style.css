@@ -30,6 +30,9 @@ p{
 	font-size: 16px;
 	font-family: "GT-Eesti", Arial;
 	font-weight: 400;
+}.wrapper{
+    max-width: 80%;
+    margin: auto;
 }
 
 #main_header {
@@ -48,16 +51,17 @@ p{
     align-items: center;
 }
 #main_header div.content div.middle ul li{
-    padding: 20px;
+    padding: 40px;
     border-right: 1px solid rgb(250, 247, 247);
     border-left: 1px solid rgb(253, 252, 252);
 }
 #main_header div.content div.middle ul li:nth-child(2){
-    margin: 0 20px;
+    
 }
-section.banner div.wrapper{
-    text-align: center;
+section.banner div.wrapper {
+    text-align: left;
     display: flex;
+    margin-right: 0;
     align-items: center;
     justify-content: space-between;
     background-image: url(https://www.taxinnovations.com/wp-content/uploads/10101.jpg);
@@ -65,13 +69,22 @@ section.banner div.wrapper{
 }
 section.banner div.left{
     width: 50%;
-    padding-left: 10%;
+    height: 400px;
     padding-top: 50px;
     background-color: #fff;
-    height: 250px;
+}
+section.banner div.left div.content{
+    padding: 30px 0;
+    padding-right: 20px;
+    
+    text-align: left;
+}
+section.banner div.left div.content h3{
+    text-align: center;
 }
 section.banner div.right{
     width: 50%;
+    height: 400px;
     
 }
 section.banner div.right img{
@@ -103,7 +116,7 @@ section.services div.content{
     width: 100%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-around;   
+    justify-content: space-between;   
     text-transform: capitalize;
 }
 section.services div.content div.card{
@@ -132,4 +145,90 @@ section.services div.content div.card div.down p{
 section.services div.content div.card div.down p.down{
     color: black;
     margin-bottom: 0;
+}
+
+section.middle{
+    height: 500px;
+    width: 100%;
+    background-image: url(https://www.taxinnovations.com/wp-content/uploads/10098-2000x580.jpg);
+    background-size: cover;
+    padding-top: 200px;
+}
+section.middle div.content{
+    width: 40%;
+    background-color:orange;
+    padding: 40px;
+}
+section.middle div.content h2{
+    font-size: 20px;
+    color: #fff;
+}
+section.middle div.content h2 span{
+    font-size: 30px;
+}
+section.middle div.content p{
+}
+
+section.news{
+    background-color: #fff;  
+    padding-bottom: 20px;
+}
+section.news div.head{
+    position: relative;
+    top: -50px;  
+    background-color: #fff;  
+    width: 200px;
+    margin: auto;
+    text-transform: uppercase;
+    text-align: center;
+}
+section.news div.head h2{
+    padding: 20px;
+}
+section.news div.content{
+    display: flex;
+    
+}
+section.news div.content div.card{
+    width: 500px;
+    margin-right: 30px;
+    padding-right: 30px;
+}
+
+section.news div.content div.card div.down h2{
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+section.news div.content div.card div.down p{
+    padding-bottom: 20px;
+}
+section.news div.content div.card div.down a{}
+ 
+
+section.bottom{
+    
+}
+section.bottom div.resorce{
+    position: relative;
+    margin: -50px auto 1px;  
+    background-color:orange;  
+    width: 200px;
+    margin: auto;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+section.bottom div.resorce h3{
+    padding: 20px;
+}
+section.bottom ul{
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    border:1px solid rgb(253, 252, 252); ;
+}
+section.bottom ul li{
+    padding: 20px;
+    border-right: 1px solid rgb(250, 247, 247);
+    border-left: 1px solid rgb(253, 252, 252);
 }
