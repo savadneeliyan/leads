@@ -35,38 +35,38 @@ p{
     margin: auto;
 }
 
-#main_header {
-   
+section.banner #main_header {
+   text-transform: capitalize;
     border:1px solid #fff;
+    background-color: rgba(245,245,245,0.4);
 }
-#main_header div.content{
-   
+section.banner #main_header div.content{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-#main_header div.content div.middle ul{
+section.banner #main_header div.content div.left{
+    padding: 0;
+}
+section.banner #main_header div.content div.middle ul{
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-#main_header div.content div.middle ul li{
+section.banner #main_header div.content div.middle ul li{
     padding: 40px;
-    border-right: 1px solid rgb(250, 247, 247);
-    border-left: 1px solid rgb(253, 252, 252);
+    
 }
-#main_header div.content div.middle ul li:nth-child(2){
+section.banner #main_header div.content div.middle ul li:nth-child(2){
     
 }
 section.banner {
-    
-    background-color: rgba(255,255,255,0.9);
+    background-image: url(images/office.jpg);
     background-position: center right;
     background-size: cover;
-    height: 400px;
+    
 }
 section.banner div.wrapper {
-    background-image: url(images/office.jpg);
     text-align: left;
     display: flex;
     margin-right: 0;
@@ -80,158 +80,36 @@ section.banner div.left{
    
 }
 section.banner div.left div.content{
+    color: #fff;
     padding: 30px 0;
     padding-right: 20px;
-    
+    background-color: rgba(63,63,52, .4);
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    border-bottom-right-radius: 225px 15px;
+    border-bottom-left-radius:15px 255px;
+    padding: 50px;
     text-align: left;
+    margin-bottom: 100px;
 }
 section.banner div.left div.content h3{
     text-align: center;
+    padding: 10px 0;
 }
 
 section.banner div.right img{
     display: block;
     width: 100%;
 }
-section.services{
-    background-color: darkgray;
-    padding-bottom: 100px;
+
+#services{
     
-}
-section.services div.head{
-   position: relative;
-   text-transform: uppercase;
-   top: -50px;    
-   width: 200px;
-   margin: auto;
-}
-section.services div.head h2{
-    padding: 20px;
-    background-color: darkgray;
-    margin: auto;
-}
-section.services h2{
-    text-align: center;
-    padding-bottom: 30px;
-}
-section.services div.content{
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;   
-    text-transform: capitalize;
-}
-section.services div.content div.card{
-    width: 25%;
-    background-color: orange;
-}
-section.services div.content div.card img{
-    width: 100%;
-}
-section.services div.content div.card div.down{
-    padding: 20px;
-    padding-bottom: 10px;
-}
-section.services div.content div.card div.down h2{
-    text-transform: uppercase;
-    color: #fff;
-    font-weight: 500;
-    font-size: 1.438em;
-    margin-bottom: 20px;
-}
-section.services div.content div.card div.down p{
-    color: #fff;
-    font-size: 15px;
-    margin-bottom: 20px;
-}
-section.services div.content div.card div.down p.down{
-    color: black;
-    margin-bottom: 0;
-}
-
-section.middle{
-    height: 500px;
-    width: 100%;
-    background-image: url(https://www.taxinnovations.com/wp-content/uploads/10098-2000x580.jpg);
-    background-size: cover;
-    padding-top: 200px;
-}
-section.middle div.content{
-    width: 40%;
-    background-color:orange;
-    padding: 40px;
-}
-section.middle div.content h2{
-    font-size: 20px;
-    color: #fff;
-}
-section.middle div.content h2 span{
-    font-size: 30px;
-}
-section.middle div.content p{
-}
-
-section.news{
-    background-color: #fff;  
-    padding-bottom: 20px;
-}
-section.news div.head{
-    position: relative;
-    top: -50px;  
-    background-color: #fff;  
-    width: 200px;
-    margin: auto;
-    text-transform: uppercase;
     text-align: center;
 }
-section.news div.head h2{
-    padding: 20px;
-}
-section.news div.content{
-    display: flex;
-    
-}
-section.news div.content div.card{
-    width: 500px;
-    margin-right: 30px;
-    padding-right: 30px;
-}
-
-section.news div.content div.card div.down h2{
-    padding-bottom: 20px;
-    font-size: 30px;
-}
-section.news div.content div.card div.down p{
-    padding-bottom: 20px;
-}
-section.news div.content div.card div.down a{}
- 
-
-section.bottom{
-    
-}
-section.bottom div.resorce{
-    position: relative;
-    margin: -50px auto 1px;  
-    background-color:orange;  
-    width: 200px;
-    margin: auto;
+#services div.head h2{
+    margin-top: 50px;
     text-transform: uppercase;
-    text-align: center;
-    color: #fff;
-}
-section.bottom div.resorce h3{
-    padding: 20px;
-}
-section.bottom ul{
-    background-color: orange;
-    display: flex;
-    justify-content: center;
-    border:1px solid rgb(253, 252, 252); ;
-}
-section.bottom ul li{
-    padding: 20px;
-    border-right: 1px solid rgb(250, 247, 247);
-    border-left: 1px solid rgb(253, 252, 252);
+    font-weight: 600;
+    font-size: 35px;
 }
 
