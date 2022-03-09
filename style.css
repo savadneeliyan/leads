@@ -21,6 +21,7 @@ body {
 	overflow-x: hidden;
 	min-width: 320px;
 	font-weight: 400;
+    background-color: #fff;
 }
 a{
 	color: #1C2C40;
@@ -210,4 +211,73 @@ section.banner div.right img{
 #services div.cards  ul li div.service-card h3{
     border-top: 1px solid black;
     padding-top:10px ;
+}
+section.works{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(43, 71, 66);
+}
+section.works div.container1{
+    width: 75%;
+}
+section.works div.container1 div.items{
+    display: flex;
+    padding-bottom: 200px;
+}
+section.works div.container1 h3{
+    color: #fff;
+    font-weight: 500;
+    font-size: 40px;
+    padding: 0 50px;
+    padding-top: 50px;
+    text-transform: capitalize;
+
+}
+section.works div.container1 div.items div.content{
+    width: 33.33%;
+    color: #fff;
+    padding: 30px 50px;
+}
+section.works div.content-img{
+    background-image: url(https://static.wixstatic.com/media/bc018e_6a9c3b5dc388482dbcd0d07fb1cc7acc~mv2.jpg/v1/fill/w_298,h_618,al_c,q_80,usm_0.66_1.00_0.01/bc018e_6a9c3b5dc388482dbcd0d07fb1cc7acc~mv2.webp);
+    background-size: cover;
+    width: 25%;
+}
+
+section.works div.content span{
+    width: 50px;
+    display: block;
+    background-color: red;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+section.works div.content span img{}
+section.works div.content h4{
+    border-top: 2px solid #fff;
+    padding: 10px 0px;
+    font-weight: 600;
+}
+section.works div.content p{}
+
+section.choose{
+    margin:100px 0;
+    text-align: center;
+    text-transform: capitalize;
+}
+section.choose div.content{
+    width: 60%;
+    margin: 0 auto;
+
+}
+section.choose ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+section.choose ul li{
+    width: 20%;
+    margin: 50px;
+    padding: 20px;
+    margin-bottom: 0;
+    border-top: 2px solid black;
 }
