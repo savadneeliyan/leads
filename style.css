@@ -39,6 +39,7 @@ section.banner #main_header {
    text-transform: capitalize;
     border:1px solid #fff;
     background-color: rgba(245,245,245,0.4);
+    color: #807f7d;
 }
 section.banner #main_header div.content{
     display: flex;
@@ -47,6 +48,8 @@ section.banner #main_header div.content{
 }
 section.banner #main_header div.content div.left{
     padding: 0;
+    font-size: 18px;
+    font-weight: 500;
 }
 section.banner #main_header div.content div.middle ul{
     display: flex;
@@ -55,7 +58,18 @@ section.banner #main_header div.content div.middle ul{
 }
 section.banner #main_header div.content div.middle ul li{
     padding: 40px;
-    
+}
+section.banner #main_header div.content div.middle ul li a{
+    padding: 20px 30px;
+    border-radius: 0px;
+    color: #807f7d;    
+    font-size: 18px;
+    font-weight: 500;
+}
+section.banner #main_header div.content div.middle ul li a:hover{
+    background-color: rgba(6, 162, 194, 1.0);
+    color: #fff;   
+    transition: 1s;
 }
 section.banner #main_header div.content div.middle ul li:nth-child(2){
     
@@ -113,3 +127,87 @@ section.banner div.right img{
     font-size: 35px;
 }
 
+#services div.head p{
+    width: 60%;
+    margin: 0 auto;
+}
+#services div.main-service{
+    width: 60%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+
+}
+#services div.main-service h2{
+    padding: 10px;
+  border-bottom: 1px solid black;
+}
+#services div.main-service h2 a{
+    
+}
+#services div.main-service h2.one{
+    border-right: 2px solid black;
+    margin-left: 10%;
+    border-bottom: none;
+
+}
+#services div.cards{
+    max-width: ;
+
+}
+#services div.cards ul{
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     text-transform: capitalize;
+}
+#services div.cards  ul li{
+    margin: 0 20px;
+    width: 30%;
+}
+#services div.cards ul li div.service-card{
+    padding: 50px 0;   
+}
+#services div.cards  ul li div.service-card div.image{
+    width: 100%;
+    height: 200px;
+    background-color: red;
+    margin-bottom: 40px;
+
+}
+#services div.cards  ul li div.service-card div.image.one{
+    background-image: url(https://brightcove04pmdo-a.akamaihd.net/1066292269001/1066292269001_6052353471001_6018124415001-vs.jpg?pubId=1066292269001&videoId=6018124415001);
+    background-size: cover;
+    background-position:center;
+}
+#services div.cards  ul li div.service-card div.image.two{
+    background-image: url(https://www.ledgerinsights.com/wp-content/uploads/2019/09/company-registration.jpg);
+    background-size: cover;
+    background-position:center;
+}
+#services div.cards  ul li div.service-card div.image.three{
+    background-image: url(https://blog.ipleaders.in/wp-content/uploads/2020/11/bookkeeping-vs-accounting-Final.jpg);
+    background-size: cover;
+    background-position:center;
+}
+#services div.cards  ul li div.service-card div.image.four{
+    background-image: url(https://www.globalsign.com/application/files/3515/8885/5116/electronic_signature_vs_digital_signature.jpg);
+    background-size: cover;
+    background-position:center;
+}
+#services div.cards  ul li div.service-card div.image.five{
+    background-image: url(https://www.fujifilm.com/fbca/-/media/0,-d-,-Global-Assets/Solutions-and-Services/Cost-Control/Cost-Management_web.jpg?h=339&w=509&la=en&hash=D34134ADBA4EC579DF5FC7D870477B2EEE6572A0);
+    background-size: cover;
+    background-position:center;
+}
+#services div.cards  ul li div.service-card div.image img{
+    width: 100%;
+    display: block;
+}
+#services div.cards  ul li div.service-card h3{
+    border-top: 1px solid black;
+    padding-top:10px ;
+}
