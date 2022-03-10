@@ -38,8 +38,8 @@ p{
  #main_header {
    text-transform: capitalize;
     border:1px solid #fff;
-    background-color: rgba(245,245,245,0.4);
-    color: #807f7d;
+    background-color: rgba(1,1,1,.4);
+    color: #fff;
     position: fixed;
     width: 100%;
     z-index: 1;
@@ -65,7 +65,7 @@ p{
 #main_header div.content div.middle ul li a{
     padding: 20px 30px;
     border-radius: 0px;
-    color: #807f7d;    
+    color: #fff;    
     font-size: 18px;
     font-weight: 500;
 }
@@ -83,7 +83,7 @@ p{
     position: relative;
 }
 section.banner {
-    background-image: url(images/office.jpg);
+    background-image: url(../images/office.jpg);
     background-position: center center;
     background-size: cover;
     z-index: 0;
@@ -133,10 +133,9 @@ section.banner div.right img{
     position: relative;
     z-index: 1;
     text-align: center;
-    background-color: #fff;
+    background-color: rgb(195 191 174);
 }
 #services div.head h2{
-    background-color: #fff;
     padding-top: 50px;
     padding-bottom: 20px;
     text-transform: uppercase;
@@ -188,13 +187,14 @@ section.banner div.right img{
 #services div.cards ul li div.service-card{
     padding: 50px 0;   
 }
+
 #services div.cards  ul li div.service-card div.image{
     width: 100%;
     height: 200px;
-    background-color: red;
     margin-bottom: 40px;
-
+    border-radius: 20px;
 }
+
 #services div.cards  ul li div.service-card div.image.one{
     background-image: url(https://brightcove04pmdo-a.akamaihd.net/1066292269001/1066292269001_6052353471001_6018124415001-vs.jpg?pubId=1066292269001&videoId=6018124415001);
     background-size: cover;
@@ -225,7 +225,7 @@ section.banner div.right img{
     display: block;
 }
 #services div.cards  ul li div.service-card h3{
-    border-top: 1px solid black;
+    /*border-top: 1px solid black;*/
     padding-top:10px ;
 }
 section.works{
