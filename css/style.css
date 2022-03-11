@@ -535,3 +535,14 @@ section.about div.content form input.submit{
         width: 100%;
     }
 }
+@media all and (max-width: 480px){
+    section.banner div.left div.content {
+        padding:18px;
+        width:300px;
+    }
+    section.banner{
+        height: 60vh;
+        background-position: -34px -51px;
+    }
+
+}
