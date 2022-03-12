@@ -603,3 +603,12 @@ div.right-child ul li a{
     }
     
 }
+@media all and (max-height: 390px){
+    #banner{
+        height: 100vh;
+    }
+    section.banner{
+        height: 100vh;
+    }
+
+}
