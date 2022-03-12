@@ -37,11 +37,17 @@ p{
     max-width: 80%;
     margin: auto;
 }
+#right-child{
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+    background-color: yellow;
+}
 
  #main_header {
    text-transform: capitalize;
     border:1px solid #fff;
-    background-color: rgba(1,1,1,.4);
+    background-color: rgba(72, 132, 238,.7);
     color: #fff;
     position: fixed;
     width: 100%;
@@ -55,7 +61,7 @@ p{
 #main_header div.content div.left{
     padding: 0;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: bold;
 }
 #main_header div.content div.middle ul{
     display: flex;
@@ -78,7 +84,15 @@ p{
     transition: 1s;
 }
 #main_header div.content div.right ul li{
+        display: none;
+}
+#main_header div.content div.right ul li {
+    height: 35px;
+    width: 35px;
+}
+#main_header div.content div.right ul li a span img{
     display: block;
+    width: 100%;
 }
 #banner{
     height: 80vh;
@@ -113,7 +127,7 @@ section.banner div.left div.content{
     color: #fff;
     padding: 30px 0;
     padding-right: 20px;
-    background-color: rgba(63,63,52, .4);
+    background-color: rgba(1, 1, 1, .4);
     border-top-left-radius: 255px 15px;
     border-top-right-radius: 15px 225px;
     border-bottom-right-radius: 225px 15px;
@@ -154,7 +168,7 @@ section.banner div.right img{
     width: 60%;
     margin: 20px auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     text-transform: uppercase;
 
 }
@@ -165,12 +179,7 @@ section.banner div.right img{
 #services div.main-service h2 a{
     
 }
-#services div.main-service h2.one{
-    border-right: 2px solid black;
-    margin-left: 10%;
-    border-bottom: none;
 
-}
 #services div.cards{
     max-width: ;
 
@@ -182,6 +191,7 @@ section.banner div.right img{
      flex-wrap: wrap;
      justify-content: space-around;
      text-transform: capitalize;
+     margin-bottom: 0;
 }
 #services div.cards  ul li{
     margin: 0 20px;
@@ -394,8 +404,50 @@ section.about div.content form input.submit{
     border-radius: 10px;
     transition:1s ease;
 }
+section.about div.content div.top span a {
+   text-transform: none; 
+}
+div.right-child{
+    height: 100vh;
+    background-color: #ff8800;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 100; 
+    display: none; 
+}  
 
+div.right-child h1{
+    width: 70px;
+    height: 70px;
+    /*background-color: black;*/
+    position: absolute;
+    right: 30px;
+    top: 30px;
+} 
+div.right-child span img{
+    width: 100%;
+    display: block;
+}
+div.right-child ul{ 
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    flex-wrap: wrap;
+    right: 0;
+    left: 0;
+    top: 40%;
+    text-transform: capitalize;
+}
+div.right-child ul li{
 
+}
+div.right-child ul li a{
+    font-size: 35px;
+    font-weight: 600 ;
+    color: #fff;
+}
 
 
 
@@ -421,8 +473,6 @@ section.about div.content form input.submit{
     }
     section.about div.content div.top form input{
         height: 50px;
-    }#main_header div.content div.right ul li{
-        display: none;
     }
 }
 @media all and (max-width: 980px){ 
@@ -433,7 +483,6 @@ section.about div.content form input.submit{
     section.banner div.left div.content{
         padding: 10px;
         width: 400px;
-        background-color: rgba(20, 21, 22, .5);
 
     }
     #services div.cards ul li div.service-card{
@@ -471,6 +520,8 @@ section.about div.content form input.submit{
     }
     section.about div.content div.top span a{
         font-size: 12px;
+    }#main_header div.content div.right ul li{
+        display: none;
     }
 }
 @media all and (max-width: 640px){ 
@@ -480,6 +531,15 @@ section.about div.content form input.submit{
     #main_header div.content div.middle ul{
         display: none;
     }
+    #main_header div.content div.right ul li{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 20px;
+    }
+   /* #main_header div.content div.right  div.right-child{-----------------------------------------------
+        display: none;
+    }*/
     #main_header div.content{
         display: flex;
         justify-content: center;
@@ -490,6 +550,11 @@ section.about div.content form input.submit{
     }
     p{
         font-size: 14px;
+    }
+    div.right-child ul li a{
+        font-size: 22px;
+    }div.right-child{
+        display: block;
     }
 }
 @media all and (max-width: 480px){
@@ -502,14 +567,8 @@ section.about div.content form input.submit{
     #services div.main-service h2:last-child{
         margin-left:10px ;
     }
-    #services div.main-service h2.one{
-        margin: 0;
-        display: none;
-    }
-    #services div.main-service h2 a{
-        display: inline-block;
-        width: 156px;
-    }
+    
+    
     #services div.main-service h2.one a{
         width: 0;
         padding: 0;
@@ -534,8 +593,6 @@ section.about div.content form input.submit{
     section.choose ul li {
         width: 100%;
     }
-}
-@media all and (max-width: 480px){
     section.banner div.left div.content {
         padding:18px;
         width:300px;
@@ -544,5 +601,5 @@ section.about div.content form input.submit{
         height: 60vh;
         background-position: -34px -51px;
     }
-
+    
 }

@@ -1,16 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leads Bussiness solution</title>
 	<link rel="icon" type="image/png"  href="images/android-icon-48x48.png" />
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 <body>
-            <section id="main_header">
+    <div class="right-child" id="options" style="">
+            <div class="top-bar">
+                <!-- <button > -->
+                <h1 class="close" onclick="show()">
+                  <img src="https://img.icons8.com/external-flat-icons-inmotus-design/67/000000/external-close-text-editor-flat-icons-inmotus-design.png"/>
+                </h1> 
+            <!-- </button> -->
+            </div>
+            <div class="middle">
+               <ul>
+                    <li><a href="">
+                            personal
+                        </a></li>
+                    <li><a href="">
+                            bussiness 
+                        </a></li>
+                    <li><a href="">
+                           tax planning
+                        </a></li>
+                </ul>
+            </div>
+            <div class="down">
+                <ul>
+                    <li><a href="">
+                            personal
+                        </a></li>
+                    <li><a href="">
+                            bussiness
+                        </a></li>
+                    <li><a href="">
+                           tax planning
+                        </a></li>
+                </ul>
+
+            </div>
+    </div><!--div.right-child-->
+             <section id="main_header">
                 <section class="wrapper">
                     <div class="content">
                         <div class="left">
@@ -25,14 +61,14 @@
                                     bussiness 
                                 </a></li>
                                 <li><a href="">
-                                   specialist tax planning
+                                    tax planning
                                 </a></li>
                             </ul>
                         </div><!--div.middle-->
                         <div class="right">
                             <ul>
-                                <li><a href="">
-                                    <span><img src="https://www.taxinnovations.com/wp-content/webp-express/webp-images/uploads/personal-icon.png.webp" alt="    "></span>
+                                <li onclick="show()"><a href="">
+                                    <span><img src="https://img.icons8.com/external-febrian-hidayat-flat-febrian-hidayat/64/000000/external-hamburger-ui-essential-febrian-hidayat-flat-febrian-hidayat.png"/></span>
                                     <h4></h4>
                                 </a></li>
                             </ul>
@@ -40,9 +76,13 @@
                     </div><!--div.content-->
                 </section><!--section.wrapper-->
             </section><!--section#header-main-->
+      
 
   <!----------------------------------------------------- header section ----------------------------------------------------------->
-  <div id="banner"></div>
+  <div id="banner">
+       <!-- <section id="right-child"></section> -->
+    
+  </div>
     <section class="banner">
         <div class="wrapper">
             <div class="left">
@@ -68,7 +108,7 @@
         </div><!--div.head-->
         <div class="main-service">
             <h2><a href="">gst</a></h2>
-            <h2 class="one"><a></a></h2>
+            <h2 class="one"><a>vat</a></h2>
             <h2 class=""><a href="">income tax</a></h2>           
         </div><!--div.main-services-->
                 <div class="cards">
@@ -214,7 +254,7 @@
                         opposite villege office,<br>
                         kavanoor</p>
                      <h2 class="email">email</h2>
-                     <span><a href="">leadsbussiness@gmail.com</a></span>   
+                     <span><a href="https://mail.google.com/">deinfo.lead@gmail.com</a></span>   
                      <h2 class="email">phone</h2>
                      <p>123-456-7890</p>
                 </div><!--div.top-->
@@ -247,7 +287,16 @@
         </div>
     </section><!--section.about-->
 
-    
+<script>
+    function show(){
+        var options=document.getElementById("options")
+            if (options.style.display !=="none") {
+                options.style.display="none"
+            }else{
+                options.style.display="block"
+            }
+    }
+</script>
 
     
 </body>
