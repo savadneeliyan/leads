@@ -8,44 +8,14 @@
     <title>Leads Bussiness solution</title>
 	<link rel="icon" type="image/png"  href="images/android-icon-48x48.png" />
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="right-child" id="options" style="">
-            <div class="top-bar">
-                <!-- <button > -->
-                <h1 class="close" onclick="show()">
-                  <img src="https://img.icons8.com/external-flat-icons-inmotus-design/67/000000/external-close-text-editor-flat-icons-inmotus-design.png"/>
-                </h1> 
-            <!-- </button> -->
-            </div>
-            <div class="middle">
-               <ul>
-                    <li><a href="">
-                            personal
-                        </a></li>
-                    <li><a href="">
-                            bussiness 
-                        </a></li>
-                    <li><a href="">
-                           tax planning
-                        </a></li>
-                </ul>
-            </div>
-            <div class="down">
-                <ul>
-                    <li><a href="">
-                            personal
-                        </a></li>
-                    <li><a href="">
-                            bussiness
-                        </a></li>
-                    <li><a href="">
-                           tax planning
-                        </a></li>
-                </ul>
-
-            </div>
-    </div><!--div.right-child-->
              <section id="main_header">
                 <section class="wrapper">
                     <div class="content">
@@ -67,22 +37,59 @@
                         </div><!--div.middle-->
                         <div class="right">
                             <ul>
-                                <li onclick="show()"><a href="">
+                                <li class="pop" >
                                     <span><img src="https://img.icons8.com/external-febrian-hidayat-flat-febrian-hidayat/64/000000/external-hamburger-ui-essential-febrian-hidayat-flat-febrian-hidayat.png"/></span>
                                     <h4></h4>
-                                </a></li>
+                                </li>
                             </ul>
                         </div><!--div.right-->
                     </div><!--div.content-->
                 </section><!--section.wrapper-->
             </section><!--section#header-main-->
-      
 
   <!----------------------------------------------------- header section ----------------------------------------------------------->
-  <div id="banner">
+  
+  <!-- <div id="banner"> -->
        <!-- <section id="right-child"></section> -->
     
-  </div>
+  <!-- </div> -->
+   <div class="right-child" id="options">
+        <div class="content">
+            <div class="top-bar">
+                <!-- <button > -->
+                <h1 class="close">
+                    <img src="https://img.icons8.com/external-flat-icons-inmotus-design/67/000000/external-close-text-editor-flat-icons-inmotus-design.png"/>
+                </h1> 
+            <!-- </button> -->
+            </div>
+            <div class="middle">
+            <ul>
+                    <li><a href="">
+                            personal
+                        </a></li>
+                    <li><a href="">
+                            bussiness 
+                        </a></li>
+                    <li><a href="">
+                        tax planning
+                        </a></li>
+                </ul>
+            </div>
+                <ul>
+                    <li><a href="">
+                        
+                        </a></li>
+                    <li><a href="">
+                            
+                        </a></li>
+                    <li><a href="">
+                        
+                        </a></li>
+                </ul>
+
+            </div>
+        </div><!--div.content-->
+    </div><!--div.right-child-->
     <section class="banner">
         <div class="wrapper">
             <div class="left">
@@ -175,12 +182,11 @@
             <h3>How It Works</h3>
             <div class="items">
                 <div class="content one">
-                      
                      <span>
                          <img src="">
                      </span>  
-                     <h4>Online support</h4>
-                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                     <h4 class="first">Online support</h4>
+                     <p class="pf1" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                     .</p>
@@ -190,8 +196,8 @@
                      <span>
                          <img src="">
                      </span>  
-                     <h4>24 X 7 support</h4>
-                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                     <h4 class="second">24 X 7 support</h4>
+                     <p class="pf2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                     .</p>
@@ -201,8 +207,8 @@
                      <span>
                          <img src="">
                      </span>  
-                     <h4>site</h4>
-                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                     <h4 class="third">site</h4>
+                     <p class="pf3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                      .</p>
@@ -287,17 +293,5 @@
         </div>
     </section><!--section.about-->
 
-<script>
-    function show(){
-        var options=document.getElementById("options")
-            if (options.style.display !=="none") {
-                options.style.display="none"
-            }else{
-                options.style.display="block"
-            }
-    }
-</script>
-
-    
 </body>
 </html>
