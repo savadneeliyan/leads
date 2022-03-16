@@ -275,6 +275,7 @@ section.works div.content h4{
     border-top: 2px solid #fff;
     padding: 10px 0px;
     font-weight: 600;
+    cursor: pointer;
 }
 section.works div.content p{
     display: none;
@@ -395,37 +396,46 @@ section.about div.content div.top span a {
    text-transform: none; 
 }
 div.right-child{
-    flex-direction: column;
-    background-color: #cfa63b;
-    height: 30vh;
-}  
-div.right-child div.content{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    background-color: #9da0a4;
     height: 100%;
-    margin: 0 5%;
-}
-div.right-child h1{
-    width: 30px;
-    height: 30px;
-    margin-left:90% ;
-    margin-top: 30px;
-} 
-div.right-child h1 img{
     width: 100%;
-    display: block;
-}
-div.right-child ul{ 
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    top: 40%;
-    text-transform: capitalize;
-    margin: 0;
-    margin-top: -15%;
-    justify-content: space-between;
+    position: fixed;
+    overflow: hidden;
+    overflow-y: scroll;
+    z-index: 2;
+    left: 100%;
+    transition: all 0.5s;
+    text-transform:capitalize;
+} 
 
+div.right-child div.content{
+    width: 80%;
+    margin:20% auto;
+}
+div.right-child i{
+    position: absolute;
+    /* right: 25px; */
+    right: 5%;
+    top: 13px;
+} 
+
+div.right-child ul li{ 
+   padding: 10px 0;
+   position: relative;
+}
+div.right-child ul li::after{
+    content: "❯";
+    width: 46px;
+    height: 46px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(90deg);
+    transition: all 0.3s; 
 }
 div.right-child ul li a{
     font-size: 35px;
@@ -433,8 +443,12 @@ div.right-child ul li a{
     color: #fff;
 }
 
+#menu{
+    display: none;
+}
 
 
+/* ----------------------------------------------------------------------------------------------------------------------------------------media query--------------------------------------------------------------------------------------------------- */
 
 @media all and (min-width: 1280px){
     #options {
@@ -445,9 +459,7 @@ div.right-child ul li a{
     #main_header div.content div.middle ul li a{
         font-size: 15px;
     }
-    #options {
-        display: none;
-    }
+    
     #main_header div.content div.middle ul li{
         padding: 40px 0px;
     }
@@ -457,10 +469,7 @@ div.right-child ul li a{
     #banner{
         height: 50vh;
     }
-    /* section.banner{
-        /* background-position: 0 -111px; */
-        /* background-repeat: no-repeat; */
-    /* } */ 
+    
     section.works div.container1 div.items{
         padding-bottom: 80px;
     }
@@ -469,10 +478,7 @@ div.right-child ul li a{
     }
 }
 @media all and (max-width: 980px){ 
-    /* section.banner{
-        background-position: 0 -111px;
-        background-repeat: no-repeat;
-    }   */
+   
     section.banner div.left div.content{
         padding: 10px;
         width: 400px;
@@ -530,13 +536,11 @@ div.right-child ul li a{
         right: 0;
         top: 20px;
     }
-   /* #main_header div.content div.right  div.right-child{-----------------------------------------------
-        display: none;
-    }*/
+   
     #main_header div.content{
         display: flex;
         justify-content: center;
-        padding: 25px 0;
+        padding: 15px 0;
     }
     .wrapper{
         max-width: 90%;
@@ -546,8 +550,9 @@ div.right-child ul li a{
     }
     div.right-child ul li a{
         font-size: 15px;
-    }#options{
-        display: none;
+    }#menu:checked~div.right-child{
+        /* left: 0; */
+        left: 0;
     }
 }
 @media all and (max-width: 480px){
