@@ -401,7 +401,7 @@ div.right-child{
     width: 100%;
     position: fixed;
     overflow: hidden;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     z-index: 2;
     left: 100%;
     transition: all 0.5s;
@@ -540,7 +540,7 @@ div.right-child ul li a{
     #main_header div.content{
         display: flex;
         justify-content: center;
-        padding: 15px 0;
+        padding: 25px 0;
     }
     .wrapper{
         max-width: 90%;
